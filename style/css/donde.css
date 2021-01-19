@@ -1,0 +1,75 @@
+.donde {
+  display: grid;
+  position: relative;
+  grid-template-areas: 'celular textos'; }
+  .donde .celu {
+    position: relative;
+    height: 100%;
+    margin-left: 140px;
+    top: -120px;
+    grid-area: celular; }
+  .donde .texto {
+    padding-left: 20%;
+    margin-right: 4%;
+    grid-area: textos; }
+    .donde .texto .h1 {
+      font-family: 'IBM Plex Sans 300', sans-serif;
+      font-size: 40px; }
+    .donde .texto .text {
+      font-size: 18px;
+      margin-top: 25px;
+      font-family: 'IBM Plex Mono', monospace; }
+
+@media (max-width: 800px) {
+  .donde {
+    display: inline;
+    position: relative; }
+    .donde .celu {
+      padding-left: 0%;
+      position: relative;
+      left: 20%;
+      align-items: center;
+      height: 650px;
+      width: 60%;
+      margin-left: 0%;
+      top: -70px; }
+    .donde .texto {
+      padding: 0;
+      margin-left: 5%;
+      margin-right: 5%;
+      grid-area: textos; }
+      .donde .texto .h1 {
+        font-family: 'IBM Plex Sans 300', sans-serif;
+        font-size: 40px; }
+      .donde .texto .text {
+        font-size: 18px;
+        margin-top: 25px;
+        font-family: 'IBM Plex Mono', monospace; } }
+@media (max-width: 500px) {
+  .donde {
+    display: inline;
+    position: relative; }
+    .donde .celu {
+      left: 0;
+      padding-left: 0%;
+      position: relative;
+      align-items: center;
+      height: 510px;
+      width: 100%;
+      margin-left: 0%;
+      top: -70px; }
+    .donde .texto {
+      padding-left: 0%;
+      position: relative;
+      top: -40px;
+      margin: 14px;
+      width: 90%; }
+      .donde .texto .h1 {
+        font-family: 'IBM Plex Sans 300', sans-serif;
+        font-size: 36px; }
+      .donde .texto .text {
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-family: 'IBM Plex Mono', monospace; } }
+
+/*# sourceMappingURL=donde.css.map */

@@ -1,0 +1,144 @@
+header{
+    height: 60px;
+    grid-area: myheder;
+}
+.inicio{
+    height: 370px;
+    grid-area: myinicio;
+}
+.episodios{
+    position: relative;
+    height: 1040px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    grid-area: myepisodios;
+    
+    .av{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 8vw;
+    }
+    .ar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 8vw;
+    }
+}
+    .donde{
+    position: relative;
+    height: 600px;
+    grid-area: mydonde;
+}
+.invitados{
+    height: 950px;
+    grid-area: myinvitados;
+}
+.temas{
+    position: relative;
+    top: 15%;
+    height: 420px;
+    grid-area: mytemas;
+}
+.novedades{
+    position: relative;
+    height: 520px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    grid-area: mynovedades;
+    .ar2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 7vw;
+      }
+}
+footer{
+    height: 100px;
+    grid-area: myfooter;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'myheder'
+    'myinicio'
+    'myepisodios'   
+    'mydonde'   
+    'myinvitados'
+    'mytemas'
+    'mynovedades'
+    'myfooter'
+    ;  
+}
+@media(max-width: 800px){
+    .donde{
+        height: 850px;
+        grid-area: mydonde;
+    }
+}
+@media(max-width: 500px){
+    header{
+
+        height: 40px;
+        grid-area: myheder;
+    }
+    .inicio{
+
+        height: 300px;
+        grid-area: myinicio;
+    }
+    .episodios{
+        position: relative;
+
+        height: 1200px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        grid-area: myepisodios;
+        
+        .av{
+            position: absolute;
+            bottom: 0;
+
+            height: 10vw;
+          }
+          .ar {
+            position: absolute;
+            top: 0;
+
+            height: 10vw;
+          }
+    }
+        .donde{
+        height: 850px;
+        grid-area: mydonde;
+    }
+    .invitados{
+
+        height: 1560px;
+        grid-area: myinvitados;
+    }
+    .temas{
+        top: 0%;
+
+        height: 920px;
+        grid-area: mytemas;
+    }
+    .novedades{
+        position: relative;
+
+        height: 340px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        grid-area: mynovedades;
+        .ar2 {
+            position: absolute;
+            top: 0;
+           
+            height: 15vw;
+          }
+    }
+    footer{
+        
+        height: 120px;
+        grid-area: myfooter;
+    }
+}

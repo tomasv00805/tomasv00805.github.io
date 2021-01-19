@@ -1,0 +1,117 @@
+.temas{
+    .h1{
+        font-family: 'IBM Plex Sans 300', sans-serif;
+        font-size: 40px;
+        margin-left: 10%;
+    }
+    .contenedor{
+        width: 80%;
+        grid-gap: 10%;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-areas: 
+        'myim1 myim2 myim3 myim4'
+        'mytext1 mytext2 mytext3 mytext4';
+        .im1,.im2,.im3,.im4{
+            width: 100%;
+            height: 120px;
+            .img1,.img2,.img3,.img4{
+                display: block;
+                margin: auto;
+                margin-top: 13px;
+            }
+        }
+        .im1{
+            grid-area: myim1;
+        }
+        .im2{
+            grid-area: myim2;
+        }
+        .im3{
+            grid-area: myim3;
+        }
+        .im4{
+            grid-area: myim4;
+        }
+    
+        .tx1,.tx2,.tx3,.tx4{
+            top: -10px;
+            position: relative;
+            display: flex;
+            margin: auto;
+            text-align: center;
+            color: black;
+            width: 85%;
+            font-family: 'IBM Plex Sans 300', sans-serif;
+            font-size: 22px;
+        }
+        .tx1{grid-area: mytext1;}
+        .tx2{grid-area: mytext2;}
+        .tx3{grid-area: mytext3;}
+        .tx4{grid-area: mytext4;}
+    }
+}
+@media (max-width:500px){
+    .temas{
+        max-width: 100%;
+        .h1{
+            font-family: 'IBM Plex Sans 300', sans-serif;
+            font-size: 36px;
+            margin-left: 16px;
+            margin-top: 48px;
+        }
+        .contenedor{
+            width: 100%;
+            grid-gap: 0px;
+            max-width: 100%;
+            margin:0px;
+            grid-template-areas: 
+            'myim1'
+            'mytext1'
+            'myim2'
+            'mytext2'
+            'myim3'
+            'mytext3'
+            'myim4'
+            'mytext4';
+            .im1,.im2,.im3,.im4{
+                margin-top: 24px;
+                width: 100%;
+                height: 120px;
+                .img1,.img2,.img3,.img4{
+                    display: block;
+                    margin: auto;
+                    margin-top: 12px;
+                }
+            }
+            .im1{
+                grid-area: myim1;
+            }
+            .im2{
+                grid-area: myim2;
+            }
+            .im3{
+                grid-area: myim3;
+            }
+            .im4{
+                grid-area: myim4;
+            }
+        
+            .tx1,.tx2,.tx3,.tx4{
+                top: 0px;
+                letter-spacing: 0;
+                text-align: center;
+                color: black;
+                width: 60%;
+                font-family: 'IBM Plex Sans 300', sans-serif;
+                font-size: 24px;
+            }
+            .tx1{grid-area: mytext1;}
+            .tx2{grid-area: mytext2;}
+            .tx3{grid-area: mytext3;}
+            .tx4{grid-area: mytext4;}
+        }
+   }
+}

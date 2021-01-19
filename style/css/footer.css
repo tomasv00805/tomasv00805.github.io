@@ -1,0 +1,55 @@
+footer .contenedor {
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between; }
+  footer .contenedor .derechos {
+    font-family: 'IBM Plex Mono', monospace; }
+  footer .contenedor .redes {
+    font-family: "font_awesome_5_brands";
+    font-family: 'IBM Plex Mono', monospace; }
+    footer .contenedor .redes ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0; }
+      footer .contenedor .redes ul li {
+        cursor: pointer;
+        margin-left: 36px; }
+        footer .contenedor .redes ul li a {
+          font-size: 20px;
+          text-decoration: none;
+          color: black; }
+
+@media (max-width: 500px) {
+  footer {
+    max-width: 100%; }
+    footer .contenedor {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      footer .contenedor .derechos {
+        text-align: center;
+        font-family: 'IBM Plex Mono', monospace;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 20px; }
+      footer .contenedor .redes {
+        font-family: "font_awesome_5_brands";
+        font-family: 'IBM Plex Mono', monospace; }
+        footer .contenedor .redes ul {
+          width: 100%;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-around;
+          margin: 0;
+          padding: 0px; }
+          footer .contenedor .redes ul li {
+            margin-left: 0px; }
+            footer .contenedor .redes ul li a {
+              font-size: 16px; } }
+
+/*# sourceMappingURL=footer.css.map */

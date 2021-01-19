@@ -1,0 +1,60 @@
+.inicio .presentacion {
+  margin-left: 7%;
+  margin-top: 4%; }
+.inicio .titulo {
+  max-width: 100%;
+  font-size: 60px;
+  font-family: 'IBM Plex Sans', sans-serif; }
+  .inicio .titulo .azul {
+    color: blue;
+    display: contents; }
+.inicio .parrafo {
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 19px;
+  width: 60%; }
+.inicio .conocer :hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+.inicio .conocer button {
+  cursor: pointer;
+  margin-top: 70px;
+  width: 250px;
+  height: 56px;
+  background-color: #00F3BB;
+  color: black;
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  top: 25px;
+  font-size: 20px;
+  border: none; }
+
+@media (max-width: 500px) {
+  .inicio {
+    max-width: 100%; }
+    .inicio .presentacion {
+      margin-left: 16px;
+      margin-top: 25px; }
+    .inicio .titulo {
+      font-size: 38px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      width: 80%; }
+    .inicio .parrafo {
+      margin-top: 16px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 15px;
+      width: 95%; }
+    .inicio .conocer :hover {
+      background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%); }
+    .inicio .conocer button {
+      margin-top: 36px;
+      width: 95%;
+      height: 44px;
+      background-color: #00F3BB;
+      color: black;
+      text-decoration: none;
+      font-family: 'IBM Plex Mono', monospace;
+      top: 25px;
+      font-size: 20px;
+      border: none; } }
+
+/*# sourceMappingURL=inicio.css.map */

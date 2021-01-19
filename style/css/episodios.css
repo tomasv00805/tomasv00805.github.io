@@ -1,0 +1,56 @@
+.episodios .titu {
+  font-size: 50px;
+  color: white;
+  margin-left: 9%;
+  margin-top: 180px;
+  font-family: 'IBM Plex Sans', sans-serif; }
+.episodios .reproduccion {
+  grid-gap: 2px;
+  position: relative;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 40px;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-areas: "ep1 ep2" "ep3 ep4"; }
+  .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
+    height: 290px;
+    width: 100%;
+    margin: 1px;
+    border: none;
+    background-color: transparent; }
+  .episodios .reproduccion .r1 {
+    grid-area: ep1; }
+  .episodios .reproduccion .r2 {
+    grid-area: ep2; }
+  .episodios .reproduccion .r3 {
+    grid-area: ep3; }
+  .episodios .reproduccion .r4 {
+    grid-area: ep4; }
+  .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
+    display: none;
+    border: none;
+    background-color: transparent; }
+
+@media (max-width: 500px) {
+  .episodios {
+    max-width: 100%; }
+    .episodios .titu {
+      font-size: 36px;
+      color: white;
+      margin-left: 16px;
+      margin-top: 64px;
+      font-family: 'IBM Plex Sans', sans-serif; }
+    .episodios .reproduccion {
+      grid-gap: 0px;
+      margin: 0px;
+      display: flex;
+      flex-direction: column; }
+      .episodios .reproduccion .r1, .episodios .reproduccion .r2, .episodios .reproduccion .r3, .episodios .reproduccion .r4 {
+        display: none; }
+      .episodios .reproduccion .r1-sm, .episodios .reproduccion .r2-sm, .episodios .reproduccion .r3-sm, .episodios .reproduccion .r4-sm {
+        margin: 8px;
+        height: 240px;
+        display: inline; } }
+
+/*# sourceMappingURL=episodios.css.map */
